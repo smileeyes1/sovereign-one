@@ -1,0 +1,6 @@
+{
+  "appId": "com.sovereign.one",
+  "appName": "Sovereign One",
+  "webDir": ".",
+  "bundledWebRuntime": false
+}

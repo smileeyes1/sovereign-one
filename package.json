@@ -1,0 +1,10 @@
+{
+  "name": "sovereign-one",
+  "version": "١.٠.٠",
+  "private": true,
+  "dependencies": {
+    "@capacitor/core": "^٦.٠.٠",
+    "@capacitor/cli": "^٦.٠.٠",
+    "@capacitor/android": "^٦.٠.٠"
+  }
+}
