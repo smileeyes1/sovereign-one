@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Sovereign One</title>
+<style>
+body{font-family:Arial;background:#020617;color:#e5e7eb;margin:0;padding:16px}
+h1{color:#38bdf8;text-align:center}
+textarea,button{width:100%;padding:14px;border-radius:10px;border:none;font-size:16px}
+textarea{margin-top:12px;height:110px}
+button{margin-top:12px;background:#38bdf8;color:#020617;font-weight:bold}
+#out{margin-top:20px;background:#0f172a;padding:14px;border-radius:10px;min-height:70px;white-space:pre-wrap}
+</style>
+</head>
+<body>
+<h1>🧠 Sovereign One</h1>
+<textarea id="i" placeholder="اكتب أي شيء…"></textarea>
+<button onclick="go()">تنفيذ</button>
+<div id="out">جاهز.</div>
+<script>
+function go(){
+ let t=i.value.trim();
+ if(!t)return;
+ if(/تعب|ضغط|مرهق/.test(t))
+  out.innerText="خفّف.
+مهمة واحدة.
+١٠ دقائق.
+أغلق.";
+ else if(/كبير|كل|دفعة/.test(t))
+  out.innerText="قسّم.
+أصغر خطوة.
+نفّذ الآن.
+أغلق.";
+ else if(/مش قادر|ملل/.test(t))
+  out.innerText="٥ دقائق فقط.
+أي إنجاز يكفي.
+أغلق.";
+ else
+  out.innerText="نفّذ خطوة واحدة.
+أغلق.";
+}
+</script>
+</body>
+</html>
